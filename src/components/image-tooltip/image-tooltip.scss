@@ -1,0 +1,56 @@
+@use "../../styles/colors" as colors;
+
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__button {
+    width: 5.4rem;
+    height: 5.4rem;
+    border: 1px solid colors.$color-white;
+    border-radius: 50%;
+    background-color: rgba(colors.$color-white, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+      width: 1.6rem;
+      height: 1.6rem;
+      background-color: colors.$color-white;
+      border-radius: 50%;
+    }
+  }
+
+  &__text-block {
+    position: absolute;
+    overflow: clip;
+    top: -15rem;
+    left: -7.2rem;
+    opacity: 0;
+    transition: opacity 0.5s, top 0.5s;
+    z-index: 1;
+  }
+
+  &__price {
+    position: absolute;
+    font-weight: 700;
+    font-size: 3.2rem;
+    top: 2.4rem;
+    left: 2rem; 
+  }
+
+  &__name {
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.6rem;
+    top: 7.2rem;
+    left: 2rem;
+  }
+
+  &__button:hover + &__text-block {
+    opacity: 1;
+    top: -12.8rem;
+  }
+}

@@ -1,0 +1,57 @@
+@use "colors" as colors;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: colors.$color-black
+}
+
+a {
+  color: colors.$color-white;
+
+  &:hover {
+    background-image: colors.$gradient;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    color: transparent;
+  }
+}
+
+input {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+.app {
+  &__sevice {
+    margin-top: 9.9rem;
+  }
+  
+  &__best-seller {
+    margin-top: 15.1rem;
+  }
+  
+  &__referance {
+    margin-top: 18.5rem;
+  }
+  
+  &__care {
+    margin-top: 17.5rem;
+  }
+
+  &__footer {
+    margin-top: 21rem;
+  }
+  
+}
+
+
