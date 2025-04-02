@@ -1,0 +1,21 @@
+@use "../../styles/colors" as colors;
+
+.chart {
+  position: relative;
+
+  &__count {
+    width: 2rem;
+    height: 2rem;
+    background-image: colors.$gradient;
+    color: colors.$color-black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 0.4rem;
+    right: -0.7rem;
+  }
+}

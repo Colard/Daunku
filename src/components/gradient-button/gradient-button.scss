@@ -1,0 +1,13 @@
+@use "../../styles/colors" as colors;
+
+.gradient-button {
+  border: none;
+  background: colors.$gradient;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover{
+    background: linear-gradient(to right, #2AF598, #009EFD);
+  }
+}

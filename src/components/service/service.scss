@@ -1,0 +1,54 @@
+@use "../../styles/colors" as colors;
+
+.service {
+  &__row {
+    padding: 0 0.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.4rem;
+    height: 8.4rem;
+  }
+
+  &__text {
+    white-space: nowrap;
+    font-weight: 400;
+    margin: 0.8rem 0 0 2.4rem;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+  }
+
+  &__description {
+    font-size: 2.0rem;
+    color: colors.$color-gray;
+    margin-top: 2.0rem;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .service {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+
+    &__item:last-child {
+      margin-bottom: 0rem;
+    }
+  }
+}

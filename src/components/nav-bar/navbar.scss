@@ -1,0 +1,18 @@
+@use "../../styles/colors" as colors;
+
+.nav {
+  &__buttons {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__item a {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+}
