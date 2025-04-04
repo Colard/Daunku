@@ -22,14 +22,23 @@
     font-weight: 700;
   }
 
-  &__nav {
-    .nav__buttons {
-      width: 53.6rem;
-    }
-  }
-
   &__chart {
     top: 0.3rem;
     right: 0.7rem;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .header {
+    &__row {
+      justify-content: normal;
+      position: static;
+    }
+
+    &__chart {
+      margin-left: auto;
+      margin-right: 4rem;
+    }
   }
 }

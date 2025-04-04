@@ -4,15 +4,114 @@
   &__buttons {
     list-style-type: none;
     display: flex;
-    position: absolute;
     justify-content: space-between;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    gap: 8rem;
   }
 
   &__item a {
     font-size: 2.4rem;
     font-weight: 400;
   }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 0.5s ease-out;
+
+    span {
+      display: block;
+      width: 5rem;
+      height: 0.4rem;
+      background-color: colors.$color-white;
+      margin: 0.5rem 0;
+      transition: all 0.5s ease-out;
+    }
+  }
+
+  &__burger.active {
+    transform: rotate(360deg);
+
+    span {
+      background-color: black;
+    }
+
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(1rem, -0.1rem) scaleX(0.5);
+    }
+
+    span:nth-child(2) {
+      transform: scaleX(0.8);
+      transform-origin: left;
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(1rem, 0.1rem) scaleX(0.5);
+    }
+  }
+
+  &__burger.inactive {
+    transform: rotate(0deg);
+  }
 }
+
+@media only screen and (max-width: 992px) {
+  .nav {
+    --menu-width: 24rem;
+
+    order: 1;
+    position: static;
+
+    &__buttons {
+      position: absolute;
+      display: block;
+      padding-top: 10rem;
+      background-color: colors.$color-white;
+      height: 100vh;
+      width: var(--menu-width);
+      top: 0;
+      z-index: 1;
+      right: calc(-1 * var(--menu-width));
+
+      transition: all 0.5s ease-out;
+
+      li {
+        transition: all 0.3s ease-out;
+      }
+
+      li:hover {
+        background-color: rgba($color: colors.$color-gray, $alpha: 0.2);
+        border-left: colors.$color-black 2rem solid;
+      }
+
+      a {
+        color: colors.$color-black;
+        margin-left: 2rem;
+        width: 100%;
+        display: block;
+        padding: 2rem 0;
+        border-bottom: 2px solid colors.$color-gray;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+      }
+
+      a:hover {
+        color: colors.$color-gray;
+      }
+    }
+
+    &__burger {
+      display: flex;
+      z-index: 10;
+      position: relative;
+    } 
+
+    &__burger.active + &__buttons {
+      right: 0;
+
+    }
+
+  }
+}
+

@@ -35,6 +35,7 @@ let Footer: React.FC<Footer> = ({ className, ...rest }) => {
             placeholder="Enter your email"
             inputId="e-mail"
             name="e-mail"
+            autoComplete="email"
             onClick={formButtonClick}
           >
             Subscribe

@@ -6,6 +6,7 @@ interface InputWithButtonProps extends React.ComponentPropsWithoutRef<"div"> {
   placeholder: string;
   inputId?: string;
   name?: string;
+  autoComplete?: string;
 }
 
 let InputWithButton: React.FC<InputWithButtonProps> = ({
@@ -15,6 +16,7 @@ let InputWithButton: React.FC<InputWithButtonProps> = ({
   onClick,
   inputId,
   name,
+  autoComplete,
   ...rest
 }) => {
   return (
@@ -27,6 +29,7 @@ let InputWithButton: React.FC<InputWithButtonProps> = ({
         className="input-with-button__input"
         placeholder={placeholder}
         id={inputId}
+        autoComplete={autoComplete}
       ></input>
 
       <GradientButton

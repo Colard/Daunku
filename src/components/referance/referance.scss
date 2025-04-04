@@ -102,3 +102,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 1366px) {
+  html .referance {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  html .referance__galery {
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3";
+  }
+}

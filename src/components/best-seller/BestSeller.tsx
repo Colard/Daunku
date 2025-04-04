@@ -17,13 +17,13 @@ let BestSeller: React.FC<BestSellerProps> = ({ className, ...rest }) => {
       {...rest}
     >
       <Container>
-        <div className="best-seller__text">
-          <h2 className="best-seller__header">Best Seller Product</h2>
 
-          <LinkWithArrow href="#" className="best-seller__link">
-            See all colection
-          </LinkWithArrow>
-        </div>
+        <h2 className="best-seller__header">Best Seller Product</h2>
+
+        <LinkWithArrow href="#" className="best-seller__link">
+          See all colection
+        </LinkWithArrow>
+  
 
         <div className="best-seller__product-list">
           <ProductPreview

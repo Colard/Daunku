@@ -14,8 +14,8 @@ function App() {
         <BestSeller className="app__best-seller"></BestSeller>
         <Referance className="app__referance"></Referance>
         <Care className="app__care"></Care>
-        <Footer className="app__footer"></Footer>
       </main>
+      <Footer className="app__footer"></Footer>
     </>
   );
 }

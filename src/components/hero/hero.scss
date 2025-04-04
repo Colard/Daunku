@@ -4,6 +4,7 @@
   width: 100%;
   position: relative;
   color: colors.$color-white;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -92,6 +93,40 @@
         font-size: 4.2rem;
         line-height: initial;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html .hero {
+    &__tooltip {
+      display: none;
+    }
+
+    &__title {
+      p {
+        display: none;
+      }
+    }
+
+    &__background {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  html .hero {
+    &__search-form {
+      width: auto;
+      
+      margin-left:1rem;
+      margin-right:1rem;
+
+      font-size: 0; 
+
     }
   }
 }
