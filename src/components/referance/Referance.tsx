@@ -25,17 +25,23 @@ let Referance: React.FC<ReferanceProps> = ({ className, ...rest }) => {
           <div className="referance__image-container referance__image-container1">
             <img
               className="referance__image"
+              loading="lazy"
               src={livingRoom}
               alt="living room"
             />
           </div>
 
           <div className="referance__image-container referance__image-container2">
-            <img className="referance__image" src={workplace} alt="workplace" />
+            <img
+              className="referance__image"
+              src={workplace}
+              alt="workplace"
+              loading="lazy"
+            />
           </div>
 
           <div className="referance__image-container referance__image-container3">
-            <img className="referance__image" src={bedroom} alt="bedroom" />
+            <img className="referance__image" src={bedroom} alt="bedroom" loading="lazy" />
           </div>
         </div>{" "}
       </Container>

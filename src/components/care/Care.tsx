@@ -84,7 +84,7 @@ let Care: React.FC<CareProps> = ({ className, ...rest }) => {
         </div>
 
         <div className="care__image-container">
-          <img className="care__image" src={plant} alt="plant"></img>
+          <img className="care__image" src={plant} alt="plant" loading="lazy"></img>
         </div>
       </Container>
     </section>
