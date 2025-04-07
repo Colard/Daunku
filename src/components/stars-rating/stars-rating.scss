@@ -19,10 +19,17 @@
     width: 101%;
     height: 100%;
     background-color: white;
+
+    -webkit-mask-image: linear-gradient(to right, #000, #000),
+      url(/src/assets/star.svg);
     mask-image: linear-gradient(to right, #000, #000), url(/src/assets/star.svg);
+    -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
+    -webkit-mask-position: center;
     mask-position: center;
+    -webkit-mask-size: 103%, 80%;
     mask-size: 103%, 80%;
+    -webkit-mask-composite: subtract;
     mask-composite: subtract;
     z-index: 1;
   }

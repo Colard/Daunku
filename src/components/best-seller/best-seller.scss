@@ -1,11 +1,8 @@
 .best-seller {
-
   & > * {
     display: grid;
     grid-template-columns: 37rem 1fr;
   }
-
-  // .best-seller__header
 
   &__header {
     font-weight: 500;
@@ -14,16 +11,12 @@
     align-self: flex-end;
   }
 
-  // .best-seller__link
-
   &__link {
     margin-top: 2rem;
     margin-left: 0.4rem;
     order: 2;
     align-self: flex-start;
   }
-
-  // .best-seller__product-list
 
   &__product-list {
     display: flex;
@@ -58,7 +51,6 @@
     }
   }
 }
-
 
 @media only screen and (max-width: 576px) {
   html .best-seller {
