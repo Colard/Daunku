@@ -1,8 +1,15 @@
 @use "../../styles/colors" as colors;
 
 .tooltip {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   &__button {
@@ -11,8 +18,14 @@
     border: 1px solid colors.$color-white;
     border-radius: 50%;
     background-color: rgba(colors.$color-white, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     & > div {
@@ -29,6 +42,7 @@
     top: -15rem;
     left: -7.2rem;
     opacity: 0;
+    -webkit-transition: opacity 0.5s, top 0.5s;
     transition: opacity 0.5s, top 0.5s;
     z-index: 1;
   }
@@ -38,7 +52,7 @@
     font-weight: 700;
     font-size: 3.2rem;
     top: 2.4rem;
-    left: 2rem; 
+    left: 2rem;
   }
 
   &__name {

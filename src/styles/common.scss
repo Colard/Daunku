@@ -1,6 +1,7 @@
 @use "colors" as colors;
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 

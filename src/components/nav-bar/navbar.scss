@@ -3,7 +3,11 @@
 .nav {
   &__buttons {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 8rem;
   }
@@ -15,9 +19,14 @@
 
   &__burger {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     cursor: pointer;
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 
     span {
@@ -26,11 +35,13 @@
       height: 0.4rem;
       background-color: colors.$color-white;
       margin: 0.5rem 0;
+      -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out;
     }
   }
 
   &__burger.active {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 
     span {
@@ -38,20 +49,25 @@
     }
 
     span:nth-child(1) {
+      -webkit-transform: rotate(45deg) translate(1rem, -0.1rem) scaleX(0.5);
       transform: rotate(45deg) translate(1rem, -0.1rem) scaleX(0.5);
     }
 
     span:nth-child(2) {
+      -webkit-transform: scaleX(0.8);
       transform: scaleX(0.8);
+      -webkit-transform-origin: left;
       transform-origin: left;
     }
 
     span:nth-child(3) {
+      -webkit-transform: rotate(-45deg) translate(1rem, 0.1rem) scaleX(0.5);
       transform: rotate(-45deg) translate(1rem, 0.1rem) scaleX(0.5);
     }
   }
 
   &__burger.inactive {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
@@ -59,6 +75,10 @@
 @media only screen and (max-width: 992px) {
   .nav {
     --menu-width: 24rem;
+
+    -webkit-box-ordinal-group: 2;
+
+    -ms-flex-order: 1;
 
     order: 1;
     position: static;
@@ -74,9 +94,12 @@
       z-index: 1;
       right: calc(-1 * var(--menu-width));
 
+      -webkit-transition: all 0.5s ease-out;
+
       transition: all 0.5s ease-out;
 
       li {
+        -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
       }
 
@@ -102,6 +125,8 @@
     }
 
     &__burger {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       z-index: 10;
       position: relative;

@@ -5,6 +5,8 @@
 }
 
 .input-with-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 1rem;
   border: solid 1px colors.$color-white;
@@ -13,6 +15,8 @@
   font-weight: 400;
 
   &__input {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     background-color: transparent;
     color: colors.$color-white;
@@ -49,8 +53,14 @@
   &__submit {
     border-radius: 5rem;
     padding: 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: colors.$color-white;
     font-size: 2rem;

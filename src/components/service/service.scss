@@ -3,17 +3,29 @@
 .service {
   &__row {
     padding: 0 0.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   &__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   &__image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 8.4rem;
     height: 8.4rem;
@@ -41,12 +53,16 @@
     &__row {
       display: grid;
       width: auto;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       justify-items: start;
     }
 
     &__item {
       margin-bottom: 2rem;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
     }
 
