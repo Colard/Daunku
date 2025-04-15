@@ -1,5 +1,5 @@
-import GradientButton from "../gradient-button/GradientButton";
-import StarsRating from "../stars-rating/StarsRating";
+import GradientButton from "../../components/gradient-button/GradientButton";
+import StarsRating from "../../components/stars-rating/StarsRating";
 import "./product-preview.scss";
 
 interface ProductPreviewProps

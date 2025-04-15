@@ -1,8 +1,8 @@
-import Container from "../container/Container";
+import Container from "../../components/container/Container";
 import "./header.scss";
 import logo from "../../assets/hero/logo.svg";
-import NavBar from "../nav-bar/NavBar";
-import Chart from "../chart/Chart";
+import NavBar from "../../components/nav-bar/NavBar";
+import Chart from "../../components/chart/Chart";
 
 interface HeaderProps extends React.ComponentPropsWithoutRef<"header"> {}
 

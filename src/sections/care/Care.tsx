@@ -1,6 +1,6 @@
 import React from "react";
 import "./care.scss";
-import Container from "../container/Container";
+import Container from "../../components/container/Container";
 
 import pot from "../../assets/care/pot.svg";
 import sun from "../../assets/care/sun.svg";

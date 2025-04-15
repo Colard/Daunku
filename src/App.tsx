@@ -1,9 +1,9 @@
-import BestSeller from "./components/best-seller/BestSeller";
-import Care from "./components/care/Care";
-import Hero from "./components/hero/Hero";
-import Referance from "./components/referance/Referance";
-import Service from "./components/service/Service";
-import Footer from "./components/footer/Footer";
+import BestSeller from "./sections/best-seller/BestSeller";
+import Care from "./sections/care/Care";
+import Hero from "./sections/hero/Hero";
+import Referance from "./sections/referance/Referance";
+import Service from "./sections/service/Service";
+import Footer from "./sections/footer/Footer";
 
 function App() {
   return (

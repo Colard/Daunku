@@ -1,5 +1,5 @@
 import React from "react";
-import InputWithButton from "../input-with-button/InputWithButton";
+import InputWithButton from "../../components/input-with-button/InputWithButton";
 import "./footer.scss";
 
 interface Footer extends React.ComponentPropsWithoutRef<"footer"> {}

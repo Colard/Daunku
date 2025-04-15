@@ -2,7 +2,7 @@ import "./referance.scss";
 import livingRoom from "../../assets/referance/image1.jpg";
 import workplace from "../../assets/referance/image2.jpg";
 import bedroom from "../../assets/referance/image3.jpg";
-import Container from "../container/Container";
+import Container from "../../components/container/Container";
 
 interface ReferanceProps extends React.ComponentPropsWithoutRef<"section"> {}
 

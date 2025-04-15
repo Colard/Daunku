@@ -1,7 +1,7 @@
 import box from "../../assets/sevices/box.svg";
 import headphone from "../../assets/sevices/Headphone.svg";
 import wallet from "../../assets/sevices/wallet.svg";
-import Container from "../container/Container";
+import Container from "../../components/container/Container";
 
 import "./service.scss";
 

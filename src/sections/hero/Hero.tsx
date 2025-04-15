@@ -1,8 +1,8 @@
 import Header from "../header/Header";
 import "./hero.scss";
 import heroImg from "../../assets/hero/Hero.png";
-import ImageTooltip from "../image-tooltip/ImageTooltip";
-import InputWithButton from "../input-with-button/InputWithButton";
+import ImageTooltip from "../../components/image-tooltip/ImageTooltip";
+import InputWithButton from "../../components/input-with-button/InputWithButton";
 import searchButton from "../../assets/hero/search.svg";
 import React from "react";
 

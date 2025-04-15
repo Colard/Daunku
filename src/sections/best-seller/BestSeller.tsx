@@ -1,4 +1,4 @@
-import LinkWithArrow from "../link-with-arrow/LinkWithArrow";
+import LinkWithArrow from "../../components/link-with-arrow/LinkWithArrow";
 import ProductPreview from "../product-preview/ProductPreview";
 
 import plant1 from "../../assets/best-seller/plant1.png";
@@ -6,7 +6,7 @@ import plant2 from "../../assets/best-seller/plant2.png";
 import plant3 from "../../assets/best-seller/plant3.png";
 
 import "./best-seller.scss";
-import Container from "../container/Container";
+import Container from "../../components/container/Container";
 
 interface BestSellerProps extends React.ComponentPropsWithoutRef<"section"> {}
 
