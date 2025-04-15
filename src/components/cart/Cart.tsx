@@ -1,9 +1,11 @@
 import "./chart.scss";
 import chart from "../../assets/hero/chart.svg";
 
-interface ChartProps extends React.ComponentPropsWithoutRef<"a"> {}
+interface ChartProps extends React.ComponentPropsWithoutRef<"a"> {
+  count: number;
+}
 
-let Chart: React.FC<ChartProps> = ({ className, href, ...rest }) => {
+let Cart: React.FC<ChartProps> = ({ className, href, count, ...rest }) => {
   return (
     <a
       href={href && "#"}
@@ -12,10 +14,10 @@ let Chart: React.FC<ChartProps> = ({ className, href, ...rest }) => {
     >
       <img alt="Logo" src={chart} className="chart__image"></img>
       <div className="chart__count">
-        <span>1</span>
+        <span>{count}</span>
       </div>
     </a>
   );
 };
 
-export default Chart;
+export default Cart;

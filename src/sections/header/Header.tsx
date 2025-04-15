@@ -2,7 +2,7 @@ import Container from "../../components/container/Container";
 import "./header.scss";
 import logo from "../../assets/hero/logo.svg";
 import NavBar from "../../components/nav-bar/NavBar";
-import Chart from "../../components/chart/Chart";
+import Cart from "../../components/cart/Cart";
 
 interface HeaderProps extends React.ComponentPropsWithoutRef<"header"> {}
 
@@ -16,7 +16,7 @@ let Header: React.FC<HeaderProps> = ({ className }) => {
             <span className="header__company-name">Daunku</span>
           </div>
           <NavBar className="header__nav"></NavBar>
-          <Chart className="header__chart"></Chart>
+          <Cart className="header__chart" count={1}></Cart>
         </div>
       </Container>
     </header>
