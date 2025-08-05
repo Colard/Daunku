@@ -13,8 +13,10 @@
   border-radius: 5rem;
   background-color: rgba(colors.$color-white, 0.2);
   font-weight: 400;
+  transition: all 0.3s ease-out;
 
   &__input {
+    transition: all 0.3s ease-out;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
